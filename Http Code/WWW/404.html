@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--  <meta http-equiv="Refresh" content="5;url=https://www.toutiao.com/"/>-->
+    <title>404 Error</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            var i = 4;
+            var tim = document.getElementById("timers");
+            var timer = setInterval(function () {
+                if (i === -1) {
+                    //2nd way
+                    window.location.href = "/";
+                    clearInterval(timer);
+                } else {
+                    tim.innerHTML = i;
+                    --i;
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+<div class="err_page">
+    <div class="err_page_left">
+        <img src="phone.jpg" alt = "phone picture.jpg" width=360px height=250px/>
+    </div>
+    <div class="err_page_right">
+        <h1>404</h1>
+        <h4>OOPS. Looks like the page you're looking for no longer exists</h4>
+        <p>Don't worry, you will be <span id="timers" style="color: red; font-size: 5rem">5</span> seconds back to index page</p>
+        <p>If you still see this message after more than 5 seconds, click on the home page link below.</p>
+        <button class="err_btn"><a href="/">Back to home</a></button>
+    </div>	
+</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+//Brief Introduction\\
+There are two rooms,
+one is room near the door:
+there are a table and chair, there is light can light up by taping 'L' the fruit on the desk.
+The other room is far from the door:
+In this room, there are couple of chairs and a desk; there is a animated teapot on the desk, you can interact with it by taping 'V'; there is a window;
+there are some pictures on the wall; there is a tree and you can interact with it by taping 'T'; there is a miror reflect the tree as the mirror reflection;
+there is a fun that can open by 'F'; and there is also a transparent ball on the desk.

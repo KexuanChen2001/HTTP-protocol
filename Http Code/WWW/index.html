@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--    <link rel="shortcut icon" href="#"/>-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-Broswer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <h1 class="heading">our services</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Images</h3>
+            <p>poster.jpg</p>
+            <a href="/poster.jpg" class="btn">acquire image</a>
+            <a href="/download/poster.jpg" class="btn">Download</a>
+        </div>
+
+        <div class="box">
+<!--            <img src="image/icon-2.png" alt="">-->
+            <h3>GIF</h3>
+            <p>duck.gif</p>
+            <a href="/duck.gif" class="btn">&nbsp&nbsp acquire gif&nbsp&nbsp</a>
+            <a href="/download/duck.gif" class="btn">Download</a>
+        </div>
+
+        <div class="box">
+<!--            <img src="image/icon-3.png" alt="">-->
+            <h3>Videos</h3>
+            <div id="vido" class="main-video-container">
+                <video controls class="main-video">
+                    <source src="hello.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p>the hello.mp4 video</p>
+            <input type="button" id="btn" class="btn" onclick="open_video()" value="acquire video">
+            <a href="/download/hello.mp4" class="btn">Download</a>
+        </div>
+
+        <div class="box">
+<!--            <img src="image/icon-4.png" alt="">-->
+            <h3>Files</h3>
+            <p>cst.pdf</p>
+            <a href="/cst.pdf" class="btn">acquire file(pdf)</a>
+            <a href="/download/cst.pdf" class="btn">Download</a>
+        </div>
+
+        <div class="box">
+<!--            <img src="image/icon-5.png" alt="">-->
+            <h3>Texts</h3>
+            <p>cg.txt</p>
+            <a href="/cg.txt" class="btn">acquire text</a>
+            <a href="/download/cg.txt" class="btn">Download</a>
+        </div>
+
+        <div class="box">
+<!--            <img src="image/icon-6.png" alt="">-->
+            <h3>Audios</h3>
+            <div id="audi" class="main-video-container">
+                <video controls class="main-video">
+                    <source src="alice.mp3" type="audio/mp3">
+                </video>
+            </div>
+            <p>alice.mp3</p>
+            <input type="button" class="btn" onclick="open_audio()" value="acquire audio">
+            <a href="/download/alice.mp3" class="btn">Download</a>
+        </div>
+
+        <div class="box">
+<!--            <img src="image/icon-7.png" alt="">-->
+            <h3>To Be Continued</h3>
+        </div>
+    </div>
+</div>
+<script>
+
+window.onload=function non(){
+    document.getElementById("vido").style.cssText = "display:none;";
+    document.getElementById("audi").style.cssText = "display:none;";
+}
+function open_video(){
+    document.getElementById("vido").style.cssText = "display:block;";
+}
+function open_audio(){
+    document.getElementById("audi").style.cssText = "display:block;";
+}
+</script>
+</body>
+</html>
+
+
+
